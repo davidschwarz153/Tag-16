@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../font/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(../font/Work_Sans/WorkSans-VariableFont_wght.ttf)
+}
+
+:root{
+    --black: #000;
+    --white: #FFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    padding: auto 8%;
+}
+
+.header{
+    height: 820px;
+    background-color: var(--black);
+    color: var(--white);    
+
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        & div{
+            /* display: block; */
+            width: 1px;
+            height: 186px;
+            background-color: rgba(255, 255, 255, 0.30);
+            margin-bottom: 42px;
+        }
+
+        & p{
+            font-family: "Work Sans";
+            font-size: 2rem;
+            letter-spacing: -0.5px;
+            margin: 34px 0;
+        }
+
+        & h1,h2{
+            font-family: "Inter";
+            font-size: 9.6rem;
+            text-transform: uppercase;
+        }
+
+        & h2{
+            font-family: "Work Sans";
+            color: #000;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--white);
+            margin-top: -28px;
+        }
+
+    }
+
+    .bear{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 130px 8% 40px 8%;
+
+        & img{
+            width: 43px;
+            height: 24px;
+            object-fit: fill;
+        }
+
+        & button{
+            font-family: "Work Sans";
+            font-size: 2rem;
+            border: #AAA solid 1px;
+            background-color: var(--black);
+            color: var(--white);
+            width: 116px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        & button:hover{
+            background-color: #FFF;
+            color: #000;
+            transition: linear 1s;
+        }
+    }
+}
+
+.storywrap{
+    height: 1504px;
+    background-color: var(--black);
+    
+
+    .text p{
+        font-family: "Inter";
+        font-weight: 700;
+        color: var(--white);
+        font-size: 9.8rem;
+        padding: 121px 18% 2px 8%;
+        margin-bottom: 20px;
+    }
+    
+
+    .numbers{
+        
+        display: flex;
+        justify-content: space-between;
+        
+        .data{
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 0 18% 2px 8%;
+
+
+            & p{
+                font-family: "Work Sans";
+                font-size: 1.4rem;
+                margin-bottom: 5.5px;
+            }
+
+            & h3{
+                font-family: "Inter";
+                font-size: 9rem;
+                margin-bottom: 17.7px;
+            }
+        }
+        
+        .map img{
+            width: 448.414px;
+            height: 543.177px;
+        };
+    }
+}
+
+.action{
+    height: 1865px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+
+    
+
+    & h3{
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 8.3rem;
+        width: 450px;
+        margin-bottom: 6px;
+    }
+
+    & p{
+        font-family: "Work Sans";
+        font-size: 1.5rem;
+        width: 434px;
+        line-height: 30px;
+        
+    }
+
+    & p:nth-of-type(1){
+        margin-bottom: 680px;
+        width: 411px;
+    }
+    
+}
+
+.pics{
+    
+    & img{
+        position: relative;
+    }
+
+    .s1{
+        width: 329px;
+        height: 219px;
+    }
+    .s2{
+        width: 274px;
+        height: 182px;
+    }
+    .s3{
+        width: 438px;
+        height: 292px;
+    }
+
+    .a1{
+        left: 70vw;
+        top:  -150px;
+    }
+    .a2{
+        top: 350px;
+        right: 20vw;
+
+    }
+    .a3{
+        top: 760px;
+        left: 37.7vw;
+
+    }
+    .a4{
+        top: 1000px;
+        right: 42vw;
+    }
+    .a5{
+        top: 890px;
+        left: 60vw;
+    }
+    .a6{
+        top: 1180px;
+        right: 23vw;
+    }
+    .a7{
+        top: 1580px;
+        left: 10vw;
+    }
+}
+
+.white  {
+    height: 150px;
+
+}
+
+.golden{
+    height: 1212px;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+    font-family: "Inter";
+    
+
+    .gb{
+        width: 298px;
+        & p{
+            font-family: "Work Sans";
+            font-size: 1.9rem;
+            margin-bottom: 12px;
+        }
+        & h3{
+            
+            font-size: 8.3rem;
+            line-height: 82px;
+        }
+    }
+
+    .as{
+        width: 533px;
+        margin-top: 30px;
+        & h3{
+            font-size: 2.9rem;
+            margin-bottom: 21px;
+        }
+
+        & p{
+            font-family: "Work Sans";
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+    }
+
+
+}
+
+.bearpics{
+    
+    
+}
+.cbear{
+    width: 731px;
+    height: 731px;
+    position: relative;
+    top: -570px;
+    left: 20vw;
+    z-index: 1;
+
+}
+
+.abear{
+    width: 366px;
+    height: 473px;
+    position: relative;
+    top: -640px ;
+    left: 15vw;
+}
+
+
+
+.sand{
+    
+    height: 411px;
+    position: relative;
+    animation: party 8s linear infinite;
+    top: -850px;
+    left: 80vw;
+    z-index: -1;
+    
+}
+
+@keyframes party {
+    0%{
+        transform: rotate(360deg);
+    }
+}
